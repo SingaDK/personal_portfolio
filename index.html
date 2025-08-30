@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Singaravelan Neelakandan — Embedded Software Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Singaravelan Neelakandan — Embedded Software Developer focused on secure firmware and cryptographic implementations." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind via CDN (buildless). For production, you can swap to a compiled setup later. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Accent ring */
+        .ring-accent {
+            box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.15);
+        }
+
+        /* Smooth card hover */
+        .card {
+            transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+        }
+    </style>
+</head>
+
+<body class="bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 font-[Inter]">
+    <!-- Header -->
+    <header
+        class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-neutral-950/60 border-b border-neutral-200/60 dark:border-neutral-800/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <a href="#home" class="font-semibold tracking-tight">SN</a>
+            <nav class="hidden sm:flex gap-6 text-sm">
+                <a href="#experience" class="hover:underline">Experience</a>
+                <a href="#projects" class="hover:underline">Projects</a>
+                <a href="#skills" class="hover:underline">Skills</a>
+                <a href="#education" class="hover:underline">Education</a>
+                <a href="#contact" class="hover:underline">Contact</a>
+            </nav>
+            <a href="./assets/Neelakandan_Singaravelan_CV.pdf"
+                class="text-sm font-medium px-3 py-1.5 rounded-xl bg-blue-600 text-white hover:bg-blue-700">Download
+                CV</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+            <div class="grid md:grid-cols-3 gap-10 items-center">
+                <div class="md:col-span-2">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">Singaravelan Neelakandan
+                    </h1>
+                    <p class="mt-3 text-lg text-neutral-600 dark:text-neutral-300">Embedded Software Developer — secure
+                        firmware, ARM-based secure elements, and applied cryptography.</p>
+                    <div class="mt-5 flex flex-wrap gap-3">
+                        <a href="#contact"
+                            class="px-4 py-2 rounded-xl bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 font-medium">Get
+                            in touch</a>
+                        <a href="#projects"
+                            class="px-4 py-2 rounded-xl border border-neutral-300 dark:border-neutral-700 font-medium">View
+                            projects</a>
+                    </div>
+                    <div class="mt-6 text-sm text-neutral-500 dark:text-neutral-400">
+                        <p>Graz, Austria · <a class="underline hover:no-underline"
+                                href="mailto:singara41@gmail.com">singara41@gmail.com</a> · <a
+                                class="underline hover:no-underline" href="tel:+4368110830323">+43 681 1083 0323</a></p>
+                        <p class="mt-1"><a class="underline hover:no-underline"
+                                href="https://www.linkedin.com/in/singaravelan-neelakandan-8b8104121/" target="_blank"
+                                rel="noreferrer">LinkedIn</a> · <a class="underline hover:no-underline"
+                                href="https://github.com/SingaDK" target="_blank" rel="noreferrer">GitHub</a></p>
+                    </div>
+                </div>
+                <div class="md:col-span-1">
+                    <div class="p-4 rounded-2xl border border-neutral-200 dark:border-neutral-800 card">
+                        <h2 class="font-semibold">Quick Summary</h2>
+                        <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">3+ years building
+                            security-critical firmware; low-level drivers (I3C, crypto cores); CI/CD + test coverage >
+                            90%; certified Scrum Master facilitating a 9‑dev team.</p>
+                        <ul class="mt-3 space-y-2 text-sm list-disc pl-5">
+                            <li>ARM Cortex secure elements</li>
+                            <li>Contactless & NFC firmware</li>
+                            <li>Cryptographic implementations</li>
+                            <li>Agile delivery (Scrum Master)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="border-t border-neutral-200 dark:border-neutral-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+            <h2 class="text-2xl font-bold">Experience</h2>
+            <div class="mt-6 grid gap-6">
+                <!-- Infineon Firmware Dev -->
+                <article class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 card">
+                    <header class="flex items-start justify-between gap-4">
+                        <div>
+                            <h3 class="text-lg font-semibold">Embedded Software Developer — Firmware</h3>
+                            <p class="text-sm text-neutral-500">Infineon Technologies · Mar 2022 — Present · Graz,
+                                Austria</p>
+                        </div>
+                        <span
+                            class="text-xs px-2 py-1 rounded-full bg-blue-600/10 text-blue-700 dark:text-blue-300 border border-blue-600/20">Security‑critical</span>
+                    </header>
+                    <ul class="mt-4 space-y-2 text-sm text-neutral-700 dark:text-neutral-300 list-disc pl-5">
+                        <li>Develop firmware for RF contactless cards & NFC on ARM Cortex secure elements.</li>
+                        <li>Implement low‑level drivers for I3C and symmetric crypto processors; optimize performance
+                            and compliance.</li>
+                        <li>Raised test coverage to &gt;90% with robust unit/integration tests; set up CI/CD for
+                            automated verification.</li>
+                        <li>Partner with QA & stakeholders to deliver multiple secure firmware releases on time.</li>
+                    </ul>
+                    <p class="mt-3 text-sm text-neutral-500">Scrum Master for a 9‑developer team; facilitate planning,
+                        stand‑ups, reviews & retros.</p>
+                </article>
+
+                <!-- Infineon Intern (Radar ML) -->
+                <article class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 card">
+                    <header>
+                        <h3 class="text-lg font-semibold">Intern — Edge AI Gesture Recognition (60 GHz Radar)</h3>
+                        <p class="text-sm text-neutral-500">Infineon Technologies · Feb 2020 — May 2021 · Linz, Austria
+                        </p>
+                    </header>
+                    <ul class="mt-3 space-y-2 text-sm list-disc pl-5 text-neutral-700 dark:text-neutral-300">
+                        <li>Processed raw FMCW Soli‑C radar data; engineered Range‑Doppler & Range‑Angle spectra.</li>
+                        <li>Deployed CNN models on Raspberry Pi with TensorFlow Lite post‑training quantization (≈4×
+                            smaller models).</li>
+                        <li>Awarded Best Abstract by ECSEL Austria (EBS) with €2,000 grant.</li>
+                    </ul>
+                </article>
+
+                <!-- Digital Design & Verification Intern -->
+                <article class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 card">
+                    <header>
+                        <h3 class="text-lg font-semibold">Digital Design & Verification Intern</h3>
+                        <p class="text-sm text-neutral-500">Infineon Technologies · Apr 2019 — Sep 2019</p>
+                    </header>
+                    <ul class="mt-3 space-y-2 text-sm list-disc pl-5 text-neutral-700 dark:text-neutral-300">
+                        <li>Formal verification of SPI protocol & address decoder for high‑frequency automotive radar
+                            (OneSpin).</li>
+                    </ul>
+                </article>
+
+                <!-- Thesis -->
+                <article class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 card">
+                    <header>
+                        <h3 class="text-lg font-semibold">Master Thesis — RTL Structural Analysis for Security (RISC‑V)
+                        </h3>
+                        <p class="text-sm text-neutral-500">TU Kaiserslautern · Jun 2021 — Dec 2021</p>
+                    </header>
+                    <ul class="mt-3 space-y-2 text-sm list-disc pl-5 text-neutral-700 dark:text-neutral-300">
+                        <li>Built a Python tool using Verible to extract register‑dependency graphs from SystemVerilog.
+                        </li>
+                        <li>Aimed at detecting side‑channel/timing issues (Spectre/Meltdown‑like) to improve
+                            verification confidence.</li>
+                        <li>Added unit tests & GitHub Actions CI.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="border-t border-neutral-200 dark:border-neutral-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+            <h2 class="text-2xl font-bold">Projects</h2>
+            <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project Card Template -->
+                <a href="#" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 card block">
+                    <h3 class="font-semibold">Robust Invisible Watermarking (FPGA)</h3>
+                    <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">VHDL architecture for DWT‑based
+                        watermarking; HLS for complex modules; presented at national conferences.</p>
+                    <p class="mt-2 text-xs text-neutral-500">Keywords: VHDL, HLS, DWT, Image Security</p>
+                </a>
+                <a href="#" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 card block">
+                    <h3 class="font-semibold">Radar Gesture ML on Raspberry Pi</h3>
+                    <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">CNN with TFLite quantization for
+                        on‑edge inference; processed 60 GHz FMCW datasets into Range‑Doppler/Angle maps.</p>
+                    <p class="mt-2 text-xs text-neutral-500">Keywords: CNN, TFLite, FMCW Radar</p>
+                </a>
+                <a href="#" class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 card block">
+                    <h3 class="font-semibold">RISC‑V RTL Security Analyzer</h3>
+                    <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Python + Verible tool to surface
+                        critical register dependencies and potential timing side‑channels.</p>
+                    <p class="mt-2 text-xs text-neutral-500">Keywords: SystemVerilog, Verible, CI</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="border-t border-neutral-200 dark:border-neutral-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+            <h2 class="text-2xl font-bold">Skills</h2>
+            <div class="mt-6 grid md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 card">
+                    <h3 class="font-semibold">Languages</h3>
+                    <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">C, C++, Python, Matlab, VHDL,
+                        SystemVerilog (SVA), Assembly, Rust</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 card">
+                    <h3 class="font-semibold">Domains</h3>
+                    <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Secure firmware, NFC/contactless,
+                        cryptography, drivers (I3C, crypto cores), CI/CD, unit testing</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 card">
+                    <h3 class="font-semibold">Tools</h3>
+                    <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">GitHub Actions, TensorFlow Lite,
+                        OneSpin, Verible, Raspberry Pi, ARM Cortex</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="border-t border-neutral-200 dark:border-neutral-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+            <h2 class="text-2xl font-bold">Education</h2>
+            <div class="mt-6 grid gap-6">
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 card">
+                    <h3 class="font-semibold">M.Sc., Electrical & Computer Engineering — Embedded Systems</h3>
+                    <p class="text-sm text-neutral-500">Technische Universität Kaiserslautern, Germany · 2017–2021</p>
+                </div>
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 card">
+                    <h3 class="font-semibold">B.E., Electronics & Communication Engineering</h3>
+                    <p class="text-sm text-neutral-500">Anna University, India · 2013–2017</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="border-t border-neutral-200 dark:border-neutral-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+            <h2 class="text-2xl font-bold">Contact</h2>
+            <div class="mt-6 grid md:grid-cols-2 gap-6">
+                <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 card">
+                    <p class="text-sm text-neutral-600 dark:text-neutral-300">Open to embedded/firmware roles in
+                        security‑critical systems, device drivers, and applied cryptography.</p>
+                    <div class="mt-4 text-sm">
+                        <p><strong>Email:</strong> <a class="underline"
+                                href="mailto:singara41@gmail.com">singara41@gmail.com</a></p>
+                        <p class="mt-1"><strong>Phone:</strong> <a class="underline" href="tel:+4368110830323">+43 681
+                                1083 0323</a></p>
+                        <p class="mt-1"><strong>Location:</strong> Graz, Austria</p>
+                    </div>
+                </div>
+                <form class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 card" name="contact"
+                    method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div class="grid gap-4">
+                        <label class="text-sm">Name
+                            <input
+                                class="mt-1 w-full rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white/80 dark:bg-neutral-900/80 px-3 py-2"
+                                type="text" name="name" required />
+                        </label>
+                        <label class="text-sm">Email
+                            <input
+                                class="mt-1 w-full rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white/80 dark:bg-neutral-900/80 px-3 py-2"
+                                type="email" name="email" required />
+                        </label>
+                        <label class="text-sm">Message
+                            <textarea
+                                class="mt-1 w-full rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white/80 dark:bg-neutral-900/80 px-3 py-2"
+                                name="message" rows="4" required></textarea>
+                        </label>
+                        <button
+                            class="inline-flex justify-center px-4 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700 font-medium"
+                            type="submit">Send</button>
+                    </div>
+                    <p class="mt-3 text-xs text-neutral-500">This form is Netlify‑ready. Enable form handling after
+                        deploying on Netlify. On Vercel, connect any form service (e.g., Formspree) or convert to an API
+                        route.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-200 dark:border-neutral-800">
+        <div
+            class="max-w-6xl mx-auto px-4 sm:px-6 py-8 text-sm text-neutral-500 flex flex-wrap gap-x-6 gap-y-2 items-center justify-between">
+            <p>© <span id="y"></span> Singaravelan Neelakandan</p>
+            <div class="flex gap-4">
+                <a class="underline" href="https://github.com/SingaDK" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="underline" href="https://www.linkedin.com/in/singaravelan-neelakandan-8b8104121/"
+                    target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
